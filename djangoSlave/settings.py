@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'djangoSlave.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}"""
+}
 
 
 # Password validation
@@ -133,9 +133,9 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'login'
+"""LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'login'"""
 
-"""LOGIN_URL = "/login/"
+LOGIN_URL = "/login/"
 LOGIN_REDIRECT_URL = "/profile/"
 LOGOUT_REDIRECT_URL = "/""""
