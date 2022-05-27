@@ -1,1 +1,1 @@
-web: gunicorn Juba_demo.wsgi --log-file -
+web: gunicorn djangoSlave.wsgi --log-file -
