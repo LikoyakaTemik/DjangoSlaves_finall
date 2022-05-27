@@ -104,7 +104,7 @@ def create_chat(request):
 
 
 def chat_input(request):
-    return redirect("http://127.0.0.1:8000")
+    return redirect("https://servusmarket.herokuapp.com/")
 
 
 def chat_list(request):
@@ -217,7 +217,7 @@ def add_sc(request):
             arr = (id_product, main_username, username)
             db.execute("INSERT INTO shopping_cart(id_product, main_username, username) VALUES(?, ?, ?)", arr)
         db.close()
-        return redirect("http://127.0.0.1:8000")
+        return redirect("https://servusmarket.herokuapp.com/")
 
 
 def new_product(request):
@@ -243,7 +243,7 @@ def new_product(request):
                     "INSERT INTO products(label, likes, id_category, price, url_img, username) VALUES(?, ?, ?, ?, ?, ?)",
                     arr)
             context["form"] = form
-        return redirect("http://127.0.0.1:8000")
+        return redirect("https://servusmarket.herokuapp.com/")
 
     else:
         form = AddProductForm()
